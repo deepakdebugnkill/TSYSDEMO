@@ -5,6 +5,7 @@ import com.demo.ui.test_reports.JVMReporting;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 import java.io.FileNotFoundException;
@@ -24,6 +25,10 @@ public class UI_Runner {
 	
 //	private static ExtentReport extentReport;
 	private static Baseclass bc;
+@BeforeClass
+public void setuo(){
+
+}
 
 	@AfterClass
 	public static void report() throws FileNotFoundException, IOException {
