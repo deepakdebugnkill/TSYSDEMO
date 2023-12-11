@@ -42,7 +42,7 @@ public class TC_01_AuthenticationStep extends BaseClass {
 	public void the_header_is_set_to(String headerKey, String headerValue) {
 
 		addHeader(headerKey, headerValue);
-
+		test.log(Status.INFO, "Header is added to request");
 	}
 	@Given("the request should contain payload")
 	public void the_request_should_contain_payload() throws IOException {
