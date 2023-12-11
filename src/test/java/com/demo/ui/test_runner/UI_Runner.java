@@ -23,7 +23,6 @@ import java.io.IOException;
 
 public class UI_Runner {
 
-    //	private static ExtentReport extentReport;
     private static Baseclass bc;
 
     @BeforeClass
