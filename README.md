@@ -102,4 +102,4 @@ This guide provides step-by-step instructions to set up the project on your loca
 - Set up Jenkins jobs to build and run project.
 ## Step 9: Jira
 - Ensure you have access to the Jira project.
-- Integrated Jira with Jenkins for automated build statuses..
+
