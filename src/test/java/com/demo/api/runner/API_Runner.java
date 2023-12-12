@@ -18,7 +18,9 @@ import com.aventstack.extentreports.ExtentReports;
 @CucumberOptions(tags = "@E2E", dryRun = false, glue = "com.demo.api.stepdefinition", features = "src\\test\\resources\\API_Features",
         plugin = {
                 "pretty",
-                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","html:target/cucumber-html-report"
+
         })
 
 public class API_Runner {
@@ -27,7 +29,7 @@ public class API_Runner {
     @BeforeClass
     public static void setup() {
 //        RestAssured.baseURI = "";
-        log.info("Setup method exeuted");
+        log.info("Setup method executed");
         extent = new ExtentReports();
     }
 
@@ -36,5 +38,6 @@ public class API_Runner {
 
         RestAssured.reset();
         extent.flush();
+        Reporter
     }
 }
