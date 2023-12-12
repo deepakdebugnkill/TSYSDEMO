@@ -1,6 +1,6 @@
 # Automated Testing Framework for UI and API
 ## Overview
-This comprehensive testing framework integrates UI and API automation to validate the functionality and behavior of a web application and sample APIs. The project employs Java, Selenium WebDriver, RestAssured, and Cucumber BDD for automated end-to-end testing. The architecture follows Maven for efficient project management, and GitHub for version control. Jenkins is utilized for continuous integration and continuous delivery, while Allure Report generates interactive and detailed test reports..
+This comprehensive testing framework integrates UI and API automation to validate the functionality and behavior of a web application and sample APIs. The project employs Java, Selenium WebDriver, RestAssured, and Cucumber BDD for automated end-to-end testing. The architecture follows Maven for efficient project management, and GitHub for version control. Jenkins is utilized for continuous integration and continuous delivery, while Allure Report generates interactive and detailed test reports.
 ## Tools Used
 - Intellij IDE: Integrated development environment for Java development.
 - Maven Project: Project management tool for building and managing Java-based projects.
