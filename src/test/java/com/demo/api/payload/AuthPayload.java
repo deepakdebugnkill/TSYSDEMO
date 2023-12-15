@@ -15,10 +15,10 @@ public class AuthPayload {
 		return new AuthPojo(defaultUsername, defaultPassword);
 	}
 
-//	public AuthPojo authPayLoad() {
-//			AuthPojo authPojo = objectMapper.readValue(
-//					new File("src\test\resources\Auth.json"),AuthPojo.class);
-//			return authPojo;
+//	public String authPayLoad() {
+//			String auth = objectMapper.readValue(
+//					new File("src\test\resources\Auth.json"),String.class);
+//			return auth;
 //	}
 
 }

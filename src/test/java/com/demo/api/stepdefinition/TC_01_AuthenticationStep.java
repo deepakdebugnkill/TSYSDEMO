@@ -1,6 +1,7 @@
 package com.demo.api.stepdefinition;
 
 import com.demo.api.common_utils.BaseClass;
+import com.demo.api.common_utils.CSVReader;
 import com.demo.api.common_utils.ConfigReader;
 import com.demo.api.common_utils.ExtentReportSetup;
 import com.demo.api.endpoints.Endpoints;
@@ -29,6 +30,7 @@ public class TC_01_AuthenticationStep extends BaseClass {
 
 	AuthPayload ap = new AuthPayload();
 	ConfigReader cr = new ConfigReader();
+	CSVReader csv = new CSVReader();
 	static GlobalDatas globalDatas = new GlobalDatas();
 
 	@Given("basic authentication credentials are provided")
@@ -36,8 +38,9 @@ public class TC_01_AuthenticationStep extends BaseClass {
 		test = extent.createTest("basic_authentication_credentials_are_provided");
 		addBasicAuth(cr.getProperty("api.username"), cr.getProperty("api.password"));
 		test.log(Status.INFO, "Basic authentication credentials provided");
-	}
 
+
+	}
 	@Given("the header {string} is set to {string}")
 	public void the_header_is_set_to(String headerKey, String headerValue) {
 
@@ -62,6 +65,8 @@ public class TC_01_AuthenticationStep extends BaseClass {
 	public void an_authentication_token_should_be_returned() {
 		String tokenres = extractResponse("token");
 		globalDatas.setToken(tokenres);
+		String user = csv.getConfigValue("api.username");
+		System.out.println(user);
 	}
 
 }

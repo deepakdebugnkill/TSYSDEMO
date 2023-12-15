@@ -38,6 +38,6 @@ public class API_Runner {
 
         RestAssured.reset();
         extent.flush();
-        Reporter
+
     }
 }

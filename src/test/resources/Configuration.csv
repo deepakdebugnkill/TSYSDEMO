@@ -1,0 +1,2 @@
+project,browser,url,username,password,windows.platform,jsonpath,jvmpath,reportType,reportConfigPath,api.username,api.password,api.baseUrl,api.customerToken,api.customerTokenSecret,api.logToken,api.accessToken,api.accessSecretToken,api.callbackURL
+Bank,firefox,https://demo.cyclos.org/ui/home,user1,password123,windows 10,\\target\\DemoFramework.html,\\target,jvm,C:\Users\dalagesan\eclipse-workspace\TSYSDEMO\src\test\resources\extent-config.xml,admin,password123,,,,,,,,
